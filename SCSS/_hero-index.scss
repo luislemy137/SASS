@@ -1,0 +1,29 @@
+/***********************HERO (CATALOGO)*******************************/
+.hero {
+  background-color: $color8;
+  #cabecera {
+    background-color: $color7;
+    color: white;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .card {
+    border-radius: 10px;
+    .card-body {
+      background-color: $color7;
+      color: white;
+      h5,
+      p {
+        font-size: 20px;
+      }
+    }
+    a {
+      border: 1.5px white solid;
+      color: white;
+    }
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}

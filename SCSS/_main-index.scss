@@ -1,0 +1,26 @@
+/***********************MAIN*******************************/
+.main-index {
+  background-color: $color2;
+
+  .contenido {
+    margin-top: 12%;
+    color: $color3;
+  }
+  h1 {
+    margin-left: 50px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .titulo {
+    color: white;
+    font-size: 3.5rem;
+  }
+  p {
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 22px;
+    line-height: 30px;
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+p {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+h1 {
+  font-family: "Bungee Inline", cursive;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/***********************NAV*******************************/
+nav {
+  background-color: #3d2314;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+nav ul a:hover {
+  background-color: #f1dab1;
+  color: black;
+  font-weight: bold;
+}
+
+/***********************MAIN*******************************/
+.main-index {
+  background-color: #f7bd01;
+}
+
+.main-index .contenido {
+  margin-top: 12%;
+  color: #3d2314;
+}
+
+.main-index h1 {
+  margin-left: 50px;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.main-index .titulo {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.main-index p {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 22px;
+  line-height: 30px;
+  width: 100%;
+  text-align: justify;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/***********************HERO (CATALOGO)*******************************/
+.hero {
+  background-color: #f9c5c7;
+}
+
+.hero #cabecera {
+  background-color: #f04f56;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 30px;
+}
+
+.hero .card {
+  border-radius: 10px;
+}
+
+.hero .card .card-body {
+  background-color: #f04f56;
+  color: white;
+}
+
+.hero .card .card-body h5,
+.hero .card .card-body p {
+  font-size: 20px;
+}
+
+.hero .card a {
+  border: 1.5px white solid;
+  color: white;
+}
+
+.hero .card:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.banner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner #cabecera2 {
+  background-color: #7343bc;
+  color: white;
+}
+
+.banner h2 {
+  font-size: 30px;
+}
+
+/***********************RECETAS*******************************/
+.recetas {
+  background-color: #f1dab1;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recetas #cabecera3 {
+  background-color: #f56032;
+  color: white;
+}
+
+.recetas h2 {
+  font-size: 30px;
+}
+
+.recetas h4 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  background-color: #f56032;
+  margin-top: 1.5rem;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/***********************BLOG*******************************/
+.blog {
+  background-color: #fd657e;
+}
+
+.blog .parrafo {
+  margin-top: 5%;
+  font-size: 20px;
+  color: white;
+}
+
+/***********************FOOTER*******************************/
+footer {
+  background-color: #3d2314;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-izquierdo {
+  width: 50%;
+  padding: 10px;
+}
+
+.footer-derecho {
+  width: 50%;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+footer ul a:hover {
+  background-color: #f1dab1;
+  color: black;
+  font-weight: bold;
+}
+/*# sourceMappingURL=estilo.css.map */

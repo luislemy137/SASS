@@ -1,0 +1,25 @@
+/***********************RECETAS*******************************/
+.recetas {
+  background-color: $color13;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  #cabecera3 {
+    background-color: $color5;
+    color: white;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    background-color: $color5;
+    margin-top: 1.5rem;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
