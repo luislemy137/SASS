@@ -1,29 +1,25 @@
 /***********************HERO (CATALOGO)*******************************/
 .hero {
-  background-color: $color8;
-  #cabecera {
-    background-color: $color7;
+  div #cabecera {
+    background-color: #f04f56;
+    font-family: "Akaya Telivigala", cursive;
     color: white;
   }
-  h2 {
-    font-size: 30px;
-  }
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9c5c7;
   .card {
     border-radius: 10px;
-    .card-body {
-      background-color: $color7;
-      color: white;
-      h5,
-      p {
-        font-size: 20px;
-      }
-    }
     a {
-      border: 1.5px white solid;
+      border: 2px white solid;
       color: white;
     }
     &:hover {
       transform: scale(1.05, 1.05);
+    }
+    .card-body {
+      background-color: #f04f56;
+      color: white;
     }
   }
 }

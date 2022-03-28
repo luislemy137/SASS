@@ -1,0 +1,32 @@
+/***********************FOOTER*******************************/
+footer {
+  background-color: $color3;
+}
+footer section {
+  display: flex;
+}
+.footer-izquierdo {
+  width: 50%;
+  padding: 10px;
+}
+.footer-derecho {
+  width: 50%;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+footer ul a:hover {
+  background-color: #f1dab1;
+  color: black;
+  font-weight: bold;
+}

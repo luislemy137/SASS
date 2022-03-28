@@ -1,26 +1,178 @@
-/***********************MAIN*******************************/
+/***********************MAIN-INDEX*******************************/
 .main-index {
   background-color: $color2;
-
+  align-items: center;
   .contenido {
     margin-top: 12%;
-    color: $color3;
+    h1 {
+      margin-left: 50px;
+      font-size: 40px;
+      line-height: 60px;
+      color: $color3;
+      width: 50%;
+      .titulo {
+        color: white;
+        font-size: 3.5rem;
+      }
+    }
+    p {
+      color: $color3;
+      font-size: 22px;
+      line-height: 30px;
+      width: 100%;
+      text-align: justify;
+      justify-content: center;
+    }
   }
+}
+.boton .btn {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 10%;
+  font-size: 20px;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #4d3e2b;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  &:hover {
+    background-color: #f9c5c7;
+    box-shadow: 0 0 10px #f9c5c7, 0 0 40px #f9c5c7, 0 0 80px #f9c5c7;
+    transition-delay: 0.5s;
+  }
+}
+
+/***********************MAIN-NOSOTRAS-INDEX*******************************/
+.main-nosotras {
+  margin-bottom: 20px;
+  color: #3d2314;
+}
+#ourstory {
+  background-color: #fbdcdd;
+  padding-top: 10%;
   h1 {
-    margin-left: 50px;
-    font-size: 40px;
-    line-height: 60px;
-  }
-  .titulo {
-    color: white;
-    font-size: 3.5rem;
+    font-family: "Bungee Inline", cursive;
+    text-align: center;
   }
   p {
-    font-family: "Akaya Telivigala", cursive;
-    font-size: 22px;
-    line-height: 30px;
-    width: 100%;
     text-align: justify;
-    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
   }
+}
+/***********************MAIN-PRODUCTOS-INDEX*******************************/
+.catalogo {
+  background-color: $color7;
+  color: white;
+  .fondo {
+    transition: width 6s, height 6s, transform 6s;
+    h1 {
+      font-family: "Bungee Inline", cursive;
+    }
+  }
+  .color2 {
+    background-color: $color8;
+    .card:hover {
+      transform: scale(1.05, 1.05);
+    }
+    .card-body {
+      background-color: $color7;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    background: #2c3e50;
+    top: 120px;
+    left: -100%;
+    text-align: left;
+    transition: all 0.5s;
+    li {
+      display: block;
+      margin: 50px 0;
+      line-height: 40px;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+#check:checked ~ ul {
+  left: 0;
+}
+/************CELULAR**************/
+@media (max-width: 400px) {
+  .main-index {
+    background-color: $color2;
+    align-items: center;
+    .contenido {
+      margin-top: 12%;
+      h1 {
+        margin-left: 0px;
+        font-size: 40px;
+        line-height: 60px;
+        color: $color3;
+        width: 50%;
+        .titulo {
+          color: white;
+          font-size: 3.5rem;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+    h1 {
+      text-align: left;
+      justify-content: left;
+      align-items: center;
+    }
+  }
+  iframe {
+    width: 340px;
+    height: 200px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    background: #2c3e50;
+    top: 120px;
+    left: -100%;
+    text-align: left;
+    transition: all 0.5s;
+    li {
+      display: block;
+      margin: 50px 0;
+      line-height: 40px;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+#check:checked ~ ul {
+  left: 0;
 }
