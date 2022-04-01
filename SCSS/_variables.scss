@@ -17,3 +17,29 @@ $color13: #f1dab1;
 .html-4 {
   background: $color1;
 }
+/**************FONT FAMILY*****************/
+a,
+p {
+  font-family: "Akaya Telivigala", cursive;
+}
+h1 {
+  font-family: "Bungee Inline", cursive;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lobster", cursive;
+}
+
+/**************MIXIN*****************/
+@mixin cabecera-title($bgc) {
+  background-color: $bgc;
+  color: white;
+}
+@mixin btn-nosotras($abs, $ml, $mt, $fsize) {
+  position: $abs;
+  margin-left: $ml;
+  margin-top: $mt;
+  font-size: $fsize;
+}

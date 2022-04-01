@@ -24,33 +24,32 @@
       justify-content: center;
     }
   }
-}
-.boton .btn {
-  position: absolute;
-  margin-left: 20%;
-  margin-top: 10%;
-  font-size: 20px;
-}
-.btn {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  color: #4d3e2b;
-  letter-spacing: 4px;
-  text-decoration: none;
-  overflow: hidden;
-  transition: 0.2s;
-  &:hover {
-    background-color: #f9c5c7;
-    box-shadow: 0 0 10px #f9c5c7, 0 0 40px #f9c5c7, 0 0 80px #f9c5c7;
-    transition-delay: 0.5s;
+  .boton .btn {
+    @include btn-nosotras(absolute, 17%, 10%, 20px);
+  }
+  .btn {
+    border: $color3 2px solid;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #4d3e2b;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    &:hover {
+      background-color: #f9c5c7;
+      box-shadow: 0 0 10px #f9c5c7, 0 0 40px #f9c5c7, 0 0 80px #f9c5c7;
+      transition-delay: 0.5s;
+    }
   }
 }
 
 /***********************MAIN-NOSOTRAS-INDEX*******************************/
 .main-nosotras {
   margin-bottom: 20px;
-  color: #3d2314;
+  color: $color3;
 }
 #ourstory {
   background-color: #fbdcdd;
@@ -88,12 +87,12 @@
     }
   }
 }
-
-@media (max-width: 858px) {
+/************MEDIA QUERY - RESPONSIVE**************/
+/************CELULAR**************/
+@media (max-width: 400px) {
   .checkbtn {
     display: block;
   }
-
   nav ul {
     position: absolute;
     width: 50%;
@@ -112,36 +111,19 @@
       }
     }
   }
-}
-#check:checked ~ ul {
-  left: 0;
-}
-/************CELULAR**************/
-@media (max-width: 400px) {
+  #check:checked ~ ul {
+    left: 0;
+  }
   .main-index {
-    background-color: $color2;
-    align-items: center;
     .contenido {
       margin-top: 12%;
-      h1 {
-        margin-left: 0px;
-        font-size: 40px;
-        line-height: 60px;
-        color: $color3;
-        width: 50%;
-        .titulo {
-          color: white;
-          font-size: 3.5rem;
-        }
-      }
+      margin-left: -50px;
       p {
         display: none;
       }
     }
-    h1 {
-      text-align: left;
-      justify-content: left;
-      align-items: center;
+    .boton .btn {
+      @include btn-nosotras(absolute, 18%, 15%, 20px);
     }
   }
   iframe {
@@ -149,11 +131,12 @@
     height: 200px;
   }
 }
-@media (max-width: 858px) {
+
+/************HASTA TABLET***********/
+@media only screen and (min-width: 401px) and (max-width: 858px) {
   .checkbtn {
     display: block;
   }
-
   nav ul {
     position: absolute;
     width: 50%;
@@ -172,7 +155,12 @@
       }
     }
   }
-}
-#check:checked ~ ul {
-  left: 0;
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .main-index {
+    .boton .btn {
+      @include btn-nosotras(absolute, 35%, 20%, 20px);
+    }
+  }
 }

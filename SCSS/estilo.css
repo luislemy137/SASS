@@ -12,47 +12,7 @@
   background: #99d8df;
 }
 
-/************HASTA TABLET***********/
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-  nav ul {
-    position: absolute;
-    width: 50%;
-    height: 50vh;
-    background: #2c3e50;
-    top: 120px;
-    left: -100%;
-    text-align: left;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 40px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-}
-
-#check:checked ~ ul {
-  left: 0;
-}
-
-/************CELULAR**************/
-@media (max-width: 400px) {
-  .main-index p {
-    display: none;
-  }
-  iframe {
-    width: 340px;
-    height: 200px;
-  }
-}
-
+/**************FONT FAMILY*****************/
 a,
 p {
   font-family: "Akaya Telivigala", cursive;
@@ -69,6 +29,7 @@ h5 {
   font-family: "Lobster", cursive;
 }
 
+/**************MIXIN*****************/
 /***********************NAV*******************************/
 nav {
   background-color: #3d2314;
@@ -150,14 +111,16 @@ nav ul a:hover {
           justify-content: center;
 }
 
-.boton .btn {
+.main-index .boton .btn {
   position: absolute;
-  margin-left: 20%;
+  margin-left: 17%;
   margin-top: 10%;
   font-size: 20px;
 }
 
-.btn {
+.main-index .btn {
+  border: #3d2314 2px solid;
+  border-radius: 50px;
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -169,7 +132,7 @@ nav ul a:hover {
   transition: 0.2s;
 }
 
-.btn:hover {
+.main-index .btn:hover {
   background-color: #f9c5c7;
   -webkit-box-shadow: 0 0 10px #f9c5c7, 0 0 40px #f9c5c7, 0 0 80px #f9c5c7;
           box-shadow: 0 0 10px #f9c5c7, 0 0 40px #f9c5c7, 0 0 80px #f9c5c7;
@@ -233,7 +196,9 @@ nav ul a:hover {
   font-size: 20px;
 }
 
-@media (max-width: 858px) {
+/************MEDIA QUERY - RESPONSIVE**************/
+/************CELULAR**************/
+@media (max-width: 400px) {
   .checkbtn {
     display: block;
   }
@@ -256,45 +221,21 @@ nav ul a:hover {
   nav ul li a {
     font-size: 20px;
   }
-}
-
-#check:checked ~ ul {
-  left: 0;
-}
-
-/************CELULAR**************/
-@media (max-width: 400px) {
-  .main-index {
-    background-color: #f7bd01;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #check:checked ~ ul {
+    left: 0;
   }
   .main-index .contenido {
     margin-top: 12%;
-  }
-  .main-index .contenido h1 {
-    margin-left: 0px;
-    font-size: 40px;
-    line-height: 60px;
-    color: #3d2314;
-    width: 50%;
-  }
-  .main-index .contenido h1 .titulo {
-    color: white;
-    font-size: 3.5rem;
+    margin-left: -50px;
   }
   .main-index .contenido p {
     display: none;
   }
-  .main-index h1 {
-    text-align: left;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .main-index .boton .btn {
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 15%;
+    font-size: 20px;
   }
   iframe {
     width: 340px;
@@ -302,7 +243,8 @@ nav ul a:hover {
   }
 }
 
-@media (max-width: 858px) {
+/************HASTA TABLET***********/
+@media only screen and (min-width: 401px) and (max-width: 858px) {
   .checkbtn {
     display: block;
   }
@@ -325,16 +267,20 @@ nav ul a:hover {
   nav ul li a {
     font-size: 20px;
   }
-}
-
-#check:checked ~ ul {
-  left: 0;
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .main-index .boton .btn {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 20%;
+    font-size: 20px;
+  }
 }
 
 /***********************HERO (CATALOGO)*******************************/
 .hero {
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #f9c5c7;
 }
 
@@ -342,6 +288,7 @@ nav ul a:hover {
   background-color: #f04f56;
   font-family: "Akaya Telivigala", cursive;
   color: white;
+  font-size: 500px;
 }
 
 .hero .card {
