@@ -7,8 +7,8 @@
 
 .html-1,
 .html-2,
-.html-3,
-.html-4 {
+.html-4,
+.html-3 {
   background: #99d8df;
 }
 
@@ -365,7 +365,7 @@ nav ul a:hover {
 /***********************FOOTER*******************************/
 footer {
   background-color: #3d2314;
-  height: 65px;
+  height: 74px;
 }
 
 footer section {
@@ -382,14 +382,15 @@ footer section {
 
 .footer-izquierdo {
   width: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.footer-izquierdo a {
+  padding-left: 2px;
 }
 
 .footer-derecho {
   width: 50%;
-  padding-top: 13px;
+  padding-top: 17px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -408,7 +409,7 @@ footer ul {
 footer ul a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.4rem;
   display: block;
 }
 
@@ -416,5 +417,11 @@ footer ul a:hover {
   background-color: #f1dab1;
   color: black;
   font-weight: bold;
+}
+
+.formulario .btn {
+  background: #3d2314;
+  border: white 2px solid;
+  color: white;
 }
 /*# sourceMappingURL=estilo.css.map */

@@ -1,7 +1,7 @@
 /***********************FOOTER*******************************/
 footer {
   background-color: $color3;
-  height: 65px;
+  height: 74px;
 }
 footer section {
   display: flex;
@@ -10,27 +10,28 @@ footer section {
 }
 .footer-izquierdo {
   width: 50%;
-
-  align-items: center;
+  a {
+    padding-left: 2px;
+  }
 }
 .footer-derecho {
   width: 50%;
-  padding-top: 13px;
+  padding-top: 17px;
   align-items: center;
 }
 footer ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-}
-footer ul a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-  display: block;
-}
-footer ul a:hover {
-  background-color: #f1dab1;
-  color: black;
-  font-weight: bold;
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem;
+    display: block;
+    &:hover {
+      background-color: #f1dab1;
+      color: black;
+      font-weight: bold;
+    }
+  }
 }

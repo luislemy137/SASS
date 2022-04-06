@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK STYLE -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./SCSS/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../SCSS/estilo.css">
      <!-- ICONO MENU HAMBURGUESA DEL NAV -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
      <!-- BOOTSTRAP -->
@@ -23,14 +23,14 @@
     <meta class="palabras clave" content="pecamania, mantequilla cremosita, frutos secos, mani, hermanas, emprendimiento, natural">
 </head>
 <body class="html-2"> 
-    <header>
+    <header class="container-fluid">
         <div class="row">
             <div class="col-12 p-2 text-center">
-                <img src="./b-img/body/nav/logo-principal.png" alt="pecamania" width="100px">
+                <a href="../index.html"><img src="../b-img/body/nav/logo-principal.png" alt="pecamania" width="100px"></a>
             </div>
         </div>
     </header>
-    <nav>
+    <nav class="container-fluid">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -42,14 +42,14 @@
             <li><a href="./suscripcion.html">SUSCRIBIRSE</a></li>
         </ul> 
     </nav>
-    <section class="main-nosotras container-fluid">
+    <section class="main-nosotras container-fluid my-3"> 
       <div class="row "> 
         <div class="contenido col-xs-12 col-md-12 col-lg-6 p-0 ">
-          <img src="./b-img/Stories/newnosotras.png" alt="fundadoras pecamania" class="img-fluid" width="100%">    
+          <img src="../b-img/Stories/newnosotras.png" alt="fundadoras pecamania" class="img-fluid" width="100%">    
         </div>
         <div id="ourstory" class="col-xs-12 col-md-12 col-lg-6">
           <h1>ANDREA & MARICRIS</h1>
-          <p class="lead mx-5">
+          <p class="lead mx-4">
             Nos presentamos oficialmente 💜
             Bueno, les contamos un poquito más de nosotras 😊👇🏼
             Somos Andrea y Maricris, dos hermanas 👭
@@ -62,14 +62,14 @@
         </div>
       </div>   
     </section>
-    <footer>
-        <section>
-            <div class="footer-izquierdo">
-                <a href="https://api.whatsapp.com/send?phone=+51 962586590&text=Hola, necesito información sobre sus productos!" target="_blank"><img src="./b-img/body/footer/wsp-color.png" alt="icono whatsapp" width="40px"></a>
-                <a href="https://www.instagram.com/pecamania_official/" target="_blank"><img src="./b-img/body/footer/instagram-color.png" alt="icono instagram" width="40px"></a>
+    <footer class="container-fluid">
+        <section class="row">
+            <div class="footer-izquierdo col-6">
+                <a href="https://api.whatsapp.com/send?phone=+51 962586590&text=Hola, necesito información sobre sus productos!" target="_blank"><img src="../b-img/body/footer/wsp-color.png" alt="icono whatsapp" width="40px"></a>
+                <a href="https://www.instagram.com/pecamania_official/" target="_blank"><img src="../b-img/body/footer/instagram-color.png" alt="icono instagram" width="40px"></a>
             </div>
-            <div class="footer-derecho">
-                <ul class="navpie">
+            <div class="footer-derecho col-6">
+                <ul class="navpie px-1">
                     <li><a href="#" target="_blank">CONTACTO</a></li>
                     <li><a href="#" target="_blank">TIENDAS</a></li>
                     <li><a href="#" target="_blank">MAYORISTAS</a></li>
