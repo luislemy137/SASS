@@ -8,7 +8,8 @@
 .html-1,
 .html-2,
 .html-4,
-.html-3 {
+.html-3,
+.html-5 {
   background: #99d8df;
 }
 
@@ -204,10 +205,10 @@ nav ul a:hover {
   }
   nav ul {
     position: absolute;
-    width: 50%;
-    height: 50vh;
-    background: #2c3e50;
-    top: 120px;
+    width: 100%;
+    height: 100vh;
+    background: #3d2314;
+    top: 200px;
     left: -100%;
     text-align: left;
     -webkit-transition: all 0.5s;
@@ -219,7 +220,7 @@ nav ul a:hover {
     line-height: 40px;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 25px;
   }
   #check:checked ~ ul {
     left: 0;
@@ -250,10 +251,10 @@ nav ul a:hover {
   }
   nav ul {
     position: absolute;
-    width: 50%;
-    height: 50vh;
-    background: #2c3e50;
-    top: 120px;
+    width: 100%;
+    height: 100vh;
+    background: #3d2314;
+    top: 200px;
     left: -100%;
     text-align: left;
     -webkit-transition: all 0.5s;
@@ -265,7 +266,7 @@ nav ul a:hover {
     line-height: 40px;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 25px;
   }
   #check:checked ~ ul {
     left: 0;
@@ -275,6 +276,124 @@ nav ul a:hover {
     margin-left: 35%;
     margin-top: 20%;
     font-size: 20px;
+  }
+}
+
+/***********************MAIN-CLIENTES*******************************/
+.main-clientes {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-clientes div .firt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  background-image: linear-gradient(60deg, white, #f9c5c7, #CCA7C9, #BF87B6);
+}
+
+.main-clientes div .firt h2 {
+  text-align: center;
+  font-size: 45px;
+  width: 90%;
+  color: #3d2314;
+}
+
+.main-clientes div .second {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .main-clientes div .second img {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 858px) {
+  .main-clientes div .second img {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 859px) and (max-width: 1800px) {
+  .main-clientes div .second img {
+    width: 100%;
+    height: 90vh;
+  }
+}
+
+.main-clientes div .third {
+  background-image: url(../b-img/Stories/St-7.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.main-clientes div .third .just1 {
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  .main-clientes div .third .just1 {
+    width: 240px;
+    height: 390px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 858px) {
+  .main-clientes div .third .just1 {
+    width: 300px;
+    height: 550px;
+  }
+}
+
+@media only screen and (min-width: 859px) and (max-width: 2200px) {
+  .main-clientes div .third .just1 {
+    width: 220px;
+    height: 400px;
+  }
+}
+
+.main-clientes div .third .just2 {
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  .main-clientes div .third .just2 {
+    width: 72%;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 858px) {
+  .main-clientes div .third .just2 {
+    width: 350px;
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 859px) and (max-width: 2200px) {
+  .main-clientes div .third .just2 {
+    width: 260px;
+    height: 550px;
   }
 }
 
@@ -411,6 +530,7 @@ footer ul a {
   text-decoration: none;
   padding: 0.4rem;
   display: block;
+  color: #3d2314;
 }
 
 footer ul a:hover {
