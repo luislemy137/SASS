@@ -57,12 +57,21 @@
   h1 {
     font-family: "Bungee Inline", cursive;
     text-align: center;
+    padding-top: 80px;
     
   }
   p {
     text-align: justify;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    line-height: 40px;
+    padding-top: 80px;
+    padding-left: 90px;
+    padding-right: 90px;
+    @media (max-width: 858px){
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+    }
     
   }
 }

@@ -17,8 +17,11 @@ nav {
       padding: 1rem;
       font-size: 20px;
       &:hover {
-        background-color: $color13;
-        color: black;
+        background-color: whitesmoke;
+        opacity: 0.5;
+        border-radius: 5px;
+      
+        color:$color3;
         font-weight: bold;
       }
     }
