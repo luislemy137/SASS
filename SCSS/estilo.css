@@ -220,6 +220,14 @@ nav label i {
   font-size: 30px;
 }
 
+@media (max-width: 400px) {
+  .catalogo .fondo .lead {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .catalogo .color2 {
   background-color: #f9c5c7;
 }
