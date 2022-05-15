@@ -1,39 +1,48 @@
 /***********************NAV*******************************/
 nav {
-  background-color: #3d2314;
-  font-family: "Akaya Telivigala", cursive;
-  display: flex;
-  height: 80px;
-  ul {
-    float: right;
-    li {
-      list-style: none;
-      display: inline-block;
-      line-height: 80px;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      font-size: 20px;
-      &:hover {
-        background-color: whitesmoke;
-        opacity: 0.5;
-        border-radius: 5px;
-      
-        color:$color3;
-        font-weight: bold;
-      }
-    }
+	background-color: #3d2314;
+	font-family: "Akaya Telivigala", cursive;
+	display: flex;
+	height: 80px;
+	ul {
+	  float: right;
+	  li {
+		list-style: none;
+		display: inline-block;
+		line-height: 80px;
+	  }
+	  a {
+		color: white;
+		text-decoration: none;
+		padding: 1rem;
+		font-size: 20px;
+		&:hover {
+		  background-color: whitesmoke;
+		  opacity: 0.6;
+		  border-radius: 5px;
+		
+		  color:black;
+		  font-weight: bold;
+		}
+	  }
+	}
+	label{
+		i{
+			color: white
+			;
+			font-size: 30px;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+		
+	}
   }
-}
-.checkbtn {
-  color: white;
-  line-height: 80px;
-  margin-left: 40px;
-  display: none;
-  font-size: 30px;
-}
-#check {
-  display: none;
-}
+  .checkbtn {
+	color: white;
+	line-height: 80px;
+	margin-left: 40px;
+	display: none;
+	font-size: 30px;
+  }
+  #check {
+	display: none;
+  }

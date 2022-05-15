@@ -53,36 +53,48 @@
 }
 #ourstory {
   background-color: #fbdcdd;
-  padding-top: 10%;
+  padding-top: 5%;
   h1 {
     font-family: "Bungee Inline", cursive;
     text-align: center;
-    padding-top: 80px;
-    
+    padding-top: 60px;
+    @media (max-width: 1280px){
+      padding-top: 5px;
+    }
   }
   p {
     text-align: justify;
     line-height: 40px;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-left: 90px;
     padding-right: 90px;
     @media (max-width: 858px){
       padding-top: 40px;
-      padding-left: 40px;
-      padding-right: 40px;
-
+      padding-left: 15px;
+      padding-right: 15px;
     }
-    
+    @media (max-width: 1280px){
+      padding-top: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
 }
 /***********************MAIN-PRODUCTOS-INDEX*******************************/
 .catalogo {
+
   background-color: $color7;
   color: white;
   .fondo {
     transition: width 6s, height 6s, transform 6s;
     h1 {
       font-family: "Bungee Inline", cursive;
+      font-size: 35px;
+    }
+    .lead{
+      padding-top: 15px;
+      color: white;
+      font-size: 30px;
     }
   }
   .color2 {
@@ -104,6 +116,7 @@
   .checkbtn {
     display: block;
   }
+  
   nav ul {
     position: absolute;
     width: 100%;
@@ -126,6 +139,7 @@
   #check:checked ~ ul {
     left: 0;
   }
+  
   .main-index {
     .contenido {
       margin-top: 12%;
@@ -178,6 +192,7 @@
   }
 }
 /***********************MAIN-CLIENTES*******************************/
+
 .main-clientes {
   display: block;
   margin: 0;
@@ -189,13 +204,14 @@
       justify-content: center;
       align-items: center;
       height: 90vh;
-      background-image: linear-gradient(60deg,white,#f9c5c7,#CCA7C9,#BF87B6,
+      background-image: linear-gradient(60deg,white,#f9c5c7,#CCA7C9,
       );
       h2 {
         text-align: center;
-        font-size: 45px;
+        font-size: 38px;
         width: 90%;
-        color:$color3; 
+        color:#F04F56
+        ; 
       }
     }
     .second {

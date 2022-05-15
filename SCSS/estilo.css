@@ -60,10 +60,16 @@ nav ul a {
 
 nav ul a:hover {
   background-color: whitesmoke;
-  opacity: 0.5;
+  opacity: 0.6;
   border-radius: 5px;
-  color: #3d2314;
+  color: black;
   font-weight: bold;
+}
+
+nav label i {
+  color: white;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .checkbtn {
@@ -151,19 +157,25 @@ nav ul a:hover {
 
 #ourstory {
   background-color: #fbdcdd;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 #ourstory h1 {
   font-family: "Bungee Inline", cursive;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
+}
+
+@media (max-width: 1280px) {
+  #ourstory h1 {
+    padding-top: 5px;
+  }
 }
 
 #ourstory p {
   text-align: justify;
   line-height: 40px;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-left: 90px;
   padding-right: 90px;
 }
@@ -171,8 +183,16 @@ nav ul a:hover {
 @media (max-width: 858px) {
   #ourstory p {
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1280px) {
+  #ourstory p {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -191,6 +211,13 @@ nav ul a:hover {
 
 .catalogo .fondo h1 {
   font-family: "Bungee Inline", cursive;
+  font-size: 35px;
+}
+
+.catalogo .fondo .lead {
+  padding-top: 15px;
+  color: white;
+  font-size: 30px;
 }
 
 .catalogo .color2 {
@@ -310,14 +337,14 @@ nav ul a:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
-  background-image: linear-gradient(60deg, white, #f9c5c7, #CCA7C9, #BF87B6);
+  background-image: linear-gradient(60deg, white, #f9c5c7, #CCA7C9);
 }
 
 .main-clientes div .firt h2 {
   text-align: center;
-  font-size: 45px;
+  font-size: 38px;
   width: 90%;
-  color: #3d2314;
+  color: #F04F56;
 }
 
 .main-clientes div .second {
@@ -455,6 +482,16 @@ nav ul a:hover {
 
 .banner h2 {
   font-size: 30px;
+}
+
+.banner button .carousel-control-prev-icon {
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+.banner button .carousel-control-next-icon {
+  border-radius: 50%;
+  border: solid 2px black;
 }
 
 /***********************RECETAS*******************************/

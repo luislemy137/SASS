@@ -8,6 +8,15 @@
   h2 {
     font-size: 30px;
   }
-  
+  button {
+    .carousel-control-prev-icon{
+      border-radius: 50%;
+      border: solid 2px black
+    };
+    .carousel-control-next-icon{
+      border-radius: 50%;
+      border: solid 2px black
+    };
+  }
 }
 
